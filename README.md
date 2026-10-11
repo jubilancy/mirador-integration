@@ -3,6 +3,9 @@
 This repository is designed to show integrating Mirador 4 with modern frontend build systems.
 
 We demonstrate the use of both our ES Module and packged UMD/CDN (served from unpkg) builds. See `index.html`, `index-umd.html`, and `annotation.html`.
+
+The ES Module demo discovers up to 40 IIIF manifests from Wikidata for works dated between 500 and 1499. Open Mirador's **Add resource** panel to browse the discovered works. Coverage depends on Wikidata records having both an inception date and an IIIF manifest URL (property P6108); this is not a complete search of every IIIF collection. Gallica (BnF) URLs are excluded because their item manifests return HTTP 403 and cannot be added by Mirador.
+
 ```
 npm run serve
 ```

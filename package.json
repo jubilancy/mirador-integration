@@ -4,6 +4,7 @@
   "description": "Examples of integrating Mirador 4 with plugins",
   "private": true,
   "scripts": {
+    "build": "parcel build index.html index-umd.html annotation.html --public-url ./",
     "serve": "rm -rf dist .parcel-cache && parcel index.html index-umd.html annotation.html",
     "serve-umd": "rm -rf dist .parcel-cache && parcel index-umd.html",
     "test": "echo \"Error: no test specified\" && exit 1"
